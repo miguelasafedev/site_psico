@@ -1,3 +1,5 @@
+@import url(variaveis.css);
+
 .faq-container {
     display: flex;
     flex-direction: column;
@@ -84,3 +86,19 @@
   color: #555;
   font-size: 15px;
 }
+
+.faq-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-padrao);
+    width: 1000px;
+    height: 260px;
+    border-radius: 25px;
+}
+
+
+
+
+
