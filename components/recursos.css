@@ -21,6 +21,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 40px 20px;
+    margin-bottom: 150px;
 }
 
 .card {
@@ -31,6 +32,14 @@
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 35px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25); 
 }
 
 .card img {

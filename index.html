@@ -87,7 +87,70 @@
             </article>
         </div>
     </section>
+
+    <section id="faq">
+        <div class="faq-container">
+            <h1>Perguntas Frequentes</h1>
+            <p>Tire suas dúvidas sobre a plataforma</p>
+
+        <div class="faq-item">
+        <button class="faq-question">O que é a “Empresa”?</button>
+        <div class="faq-answer">
+            <p>A Empresa é uma plataforma de apoio para psicólogos...</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Como funciona a segurança dos dados dos meus pacientes?</button>
+        <div class="faq-answer">
+            <p>Utilizamos criptografia de ponta a ponta para proteger os dados...</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Posso acessar a plataforma pelo celular?</button>
+        <div class="faq-answer">
+            <p>Sim, você pode acessar pelo celular usando o navegador — não é necessário instalar nenhum aplicativo.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Como funciona a transcrição das sessões com IA?</button>
+        <div class="faq-answer">
+            <p>As sessões são transcritas automaticamente com inteligência artificial, garantindo agilidade e precisão.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Existe um período de teste gratuito?</button>
+        <div class="faq-answer">
+            <p>Sim, você pode experimentar todos os recursos gratuitamente por 14 dias.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">Há suporte técnico disponível?</button>
+        <div class="faq-answer">
+            <p>Sim, oferecemos suporte técnico via chat e e-mail para ajudar você sempre que precisar.</p>
+        </div>
+    </div>
+
+
+     </div>
+    </section>
+
 </div>
 </main>
+
+<script>
+  const faqs = document.querySelectorAll('.faq-item');
+
+  faqs.forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
 </body>
 </html>
