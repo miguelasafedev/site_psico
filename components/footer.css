@@ -1,0 +1,74 @@
+@import url(variaveis.css);
+
+.footer {
+  background-color: #F5F9FF;
+  padding: 40px 20px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  margin: 20px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #007BFF;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #007BFF;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 100%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #555;
+  max-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 115px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #777;
+}
