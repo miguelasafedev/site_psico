@@ -34,3 +34,15 @@
     font-weight: 500;
     margin-bottom: 92px;
 }
+
+.button-comece {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 26px;
+    color: var(--azul-padrao);
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+}
