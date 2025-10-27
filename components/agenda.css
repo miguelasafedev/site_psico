@@ -1,0 +1,191 @@
+@import url(variaveis.css);
+@import url(../reset.css);
+
+
+.bck-agenda {
+    background-color: var(--azul-background);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 245px;
+    height: 100%;
+    background-color: #fff;
+    padding: 26px 26px;
+    border-right: 1px solid #EFF3F7;
+}
+
+.sidebar-header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sidebar button {
+    background: transparent;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.sidebar button > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    height: 60px;
+
+}
+
+strong {
+    color: var(--azul-padrao);
+}
+
+.sidebar button:hover > span {
+    color: var(--azul-padrao);
+}
+
+.tittle {
+    margin-left: 400px;
+    margin-top: 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tittle h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.tittle p {
+    opacity: 50%;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.agenda-box {
+    margin-left: 400px;
+    background-color: #fff;
+    width: 995px;
+    height: 375px;
+    border-radius: 15px;
+    padding-left: 45px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.paciente-box {
+    background-color: #EFF3F7;
+    width: 918px;
+    height: 60px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 26px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.info-paciente {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.info-paciente h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-paciente p {
+    font-size: 12px;
+}
+
+.info-horario {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding-left: 650px;
+    padding-top: 10px;
+    gap: 8px;
+}
+
+.info-horario p {
+    font-size: 12px;
+    opacity: 50%;
+}
+
+
+.resumo-box {
+  background-color: #ffffff;
+  border: 1px solid #DDECFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  max-width: 300px;
+  margin-top: 100px;
+  position: relative;
+  left: 1020px;
+  top: -455px;
+}
+
+.resumo-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007BFF;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resumo-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resumo-dados div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #555;
+}
+
+.resumo-dados strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #007BFF;
+}
+
+.evento-btn {
+    margin-left: 1600px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--azul-padrao);
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    top: -80px;
+}
