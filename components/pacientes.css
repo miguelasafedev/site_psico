@@ -1,0 +1,92 @@
+@import url(variaveis.css);
+
+.search-bar {
+    margin-left: 400px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #DDECFF;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 1390px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Poppins", sans-serif;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  flex: 1;
+  color: #333;
+  background-color: transparent;
+}
+
+.grid-pacientes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas */
+  column-gap: 5px; /* reduzido para aproximar as colunas */
+  row-gap: 20px;
+  padding: 40px 0;
+  margin-left: 400px;
+}
+
+.paciente-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #DDECFF;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  gap: 16px;
+  width: 88%; /* ocupa toda a célula da grid */
+}
+
+.avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dados {
+  flex: 1;
+}
+
+.dados h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.dados p {
+  font-size: 14px;
+  color: #555;
+  margin: 6px 0;
+}
+
+.icon {
+  margin-right: 6px;
+  color: #007BFF;
+  font-size: 16px;
+}
+
+.evento-btn {
+    margin-left: 1600px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--azul-padrao);
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+    top: -80px;
+}
