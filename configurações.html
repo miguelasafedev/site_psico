@@ -1,0 +1,157 @@
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./components/style.css">
+    <link rel="icon" type="image" href="./img/logo_psico.png">
+
+</head>
+
+<body>
+
+   <aside class="sidebar">
+    <header class="sidebar-header">
+        <img src="./img/logo-sidebar.png" alt="">
+    </header>
+
+    <nav>
+            <button>
+                <span>
+                    <img src="./img/agenda-off.png" alt="">
+                    <span>Agenda</span>
+                </span>
+            </button>
+
+        <button>
+            <span>
+                <img src="./img/pacientes-on.png " alt="">
+                <span><strong>Meus Pacientes</strong></span>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <img src="./img/registros-off.png " alt="">
+                <span>Registros</span>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <img src="./img/sessoes-off.png " alt="">
+                <span>Sessões/Transcrição</span>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <img src="./img/financeiro-off.png " alt="">
+                <span>Financeiro</span>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <img src="./img/config-off.png " alt="">
+                <span>Configurações</span>
+            </span>
+        </button>
+
+    </nav>
+    
+</aside>
+
+  <div class="title">
+    <header>
+      <h1>Configurações</h1>
+      <p>Gerencie suas preferências e conta</p>
+    </header>
+  </div>
+
+  <article class="grid-configurações">
+     <section class="card-sessao-configuração-card">
+      <div class="conteudo-card">
+        <h3>Perfil</h3>
+
+        <label>Nome Completo</label>
+        <input type="text" value="Nome do Psicólogo">
+
+        <label>Email</label>
+        <input type="email" value="email@exemplo.com">
+
+        <label>CRP</label>
+        <input type="text" placeholder="00/00000">
+
+        <button class="btn-salvar">Salvar alterações</button>
+      </div>
+    </section>
+
+     <section class="card-sessao-configuração-card">
+      <div class="toogle">
+        <h3>Notificações</h3>
+
+        <label>
+            <input type="checkbox" checked>
+            Lembretes de Consulta
+        </label>
+        
+
+         <label>
+            <input type="checkbox" checked>
+            Notificações por email
+        </label>
+
+         <label>
+            <input type="checkbox" checked>
+           Pagamentos Pendentes
+        </label>
+      </div>
+    </section>
+
+     <section class="card-sessao-configuração-card">
+      <div class="conteudo-card">
+        <h3>Segurança</h3>
+
+        <label>Senha Atual</label>
+        <input type="password">
+
+        <label>Nova Senha</label>
+        <input type="password">
+
+        <label>Confirmar Nova Senha</label>
+        <input type="password">
+
+        <button class="btn-salvar">Alterar Senha</button>
+      </div>
+    </section>
+
+    <section class="card-sessao-onfiguração-card">
+      <div class="toogle">
+        <h3>Notificações</h3>
+
+        <label>
+            <input type="checkbox" checked>
+            Modo Escuro
+        </label>
+        
+        <label>
+            <input type="checkbox" checked>
+            Animações
+        </label>
+
+         <label>
+            <input type="checkbox" checked>
+           Sons do sistema
+        </label>
+      </div>
+    </section>
+    </article>
+  </main>
+
+</body>
+</html>

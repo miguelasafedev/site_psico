@@ -1,0 +1,90 @@
+@import url(variaveis.css);
+
+.grid-configurações {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas */
+  column-gap: 5px; /* reduzido para aproximar as colunas */
+  row-gap: 20px;
+  padding: 40px 0;
+  margin-left: 400px;
+}
+
+.card-sessao-configuração-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Poppins", sans-serif;
+    width: 180%; /* ocupa toda a célula da grid */
+}
+
+.conteudo-card input[type="text"],
+.conteudo-card input[type="email"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.btn-salvar {
+    background-color: #0065ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-top: 10px;
+    width: fit-content;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.btn-salvar:hover {
+  background-color: #0043ca;
+}
+
+
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background-color: #ccc;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle > label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.toggle > label:active:after {
+    transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+    background: #0d023a;
+}
+.toggle > input:checked ~ label:after {
+    left: 20px;
+    background: #0056ff;
+}
+.toggle {
+    margin-bottom: 40px;
+}
+.toggle > input {
+    display: none;
+}
