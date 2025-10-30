@@ -24,7 +24,7 @@
 }
 
 .avatar img {
-   width: 40px;
+  width: 40px;
   height: 40px;
   background-color: #0056ff;
   opacity: 0.12;
@@ -48,14 +48,14 @@
 }
 
 .evento-btn {
-    margin-left: 1600px;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    background-color: var(--azul-padrao);
-    padding: 15px 20px;
-    border-radius: 10px;
-    position: relative;
-    top: -80px;
+  margin-left: 1600px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--azul-padrao);
+  padding: 15px 20px;
+  border-radius: 10px;
+  position: relative;
+  top: -80px;
 }
