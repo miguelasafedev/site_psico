@@ -32,14 +32,14 @@
         <button>
             <span>
                 <img src="./img/pacientes-off.png " alt="">
-                <span><strong>Meus Pacientes</strong></span>
+                <span>Meus Pacientes</span>
             </span>
         </button>
 
         <button>
             <span>
-                <img src="./img/registros-off.png " alt="">
-                <span>Registros</span>
+                <img src="./img/registros-on.png " alt="">
+                <span><strong>Registros</strong></span>
             </span>
         </button>
 
@@ -73,39 +73,59 @@
         <p>Histórico e anotações das sessões realizadas</p>
     </div>
 
-<article class="grid-pacientes">
-
-    <div class="card-sessao">
-      <div class="avatar"></div>
-      <div class="dados">
-        <h3>João Silva</h3>
-        <p><strong>Tópicos Discutidos:</strong> Ansiedade, técnicas de respiração</p>
-        <p><strong>Resumo da Sessão:</strong> Paciente relatou melhora nos sintomas de ansiedade após praticar exercícios de respiração diafragmática.</p>
+<div class="card-registros">
+    <div class="card-header">
+      <div class="icon">
+        <img src="./img/registro-icon.png" alt="ícone de documento">
       </div>
-      <span class="data">10/10/2025</span>
-    </div>
-
-    <div class="card-sessao">
-      <div class="avatar"></div>
-      <div class="dados">
-        <h3>Maria Santos</h3>
-        <p><strong>Tópicos Discutidos:</strong> Autoestima, relacionamentos</p>
-        <p><strong>Resumo da Sessão:</strong> Discussão sobre padrões de relacionamento e trabalho em autoconfiança. Atribuídas tarefas para próxima sessão.</p>
+      <div class="info">
+        <h2>João Silva</h2>
+        <p class="topics"><span>Tópicos discutidos:</span> Ansiedade, técnicas de respiração</p>
       </div>
-      <span class="data">12/10/2025</span>
+      <p class="date">📅 10/10/2025</p>
     </div>
-    
-    <div class="card-sessao">
-      <div class="avatar"></div>
-      <div class="dados">
-        <h3>Pedro Costa</h3>
-        <p><strong>Tópicos Discutidos:</strong> Estresse no trabalho</p>
-        <p><strong>Resumo da Sessão:</strong> Primeira sessão. Paciente descreveu situação de estresse laboral. Estabelecidos objetivos terapêuticos.</p>
-      </div>
-      <span class="data">08/10/2025</span>
+    <hr>
+    <div class="card-body">
+      <h3>Resumo da Sessão:</h3>
+      <p>Paciente relatou melhora nos sintomas de ansiedade após praticar exercícios de respiração diafragmática.</p>
     </div>
+  </div>
 
-</article>
+<div class="card-registros">
+    <div class="card-header">
+      <div class="icon">
+        <img src="./img/registro-icon.png" alt="ícone de documento">
+      </div>
+      <div class="info">
+        <h2>Maria Santos</h2>
+        <p class="topics"><span>Tópicos discutidos:</span> Ansiedades e relacionamentos</p>
+      </div>
+      <p class="date">📅 12/10/2025</p>
+    </div>
+    <hr>
+    <div class="card-body">
+      <h3>Resumo da Sessão:</h3>
+      <p>Discussão sobre padrões de relacionamento e trabalho em autoconfiança. Atribuídas tarefas para próxima sessão.</p>
+    </div>
+  </div>
+
+<div class="card-registros">
+    <div class="card-header">
+      <div class="icon">
+        <img src="./img/registro-icon.png" alt="ícone de documento">
+      </div>
+      <div class="info">
+        <h2>Pedro Costa</h2>
+        <p class="topics"><span>Tópicos discutidos:</span>Estresse no trabalho</p>
+      </div>
+      <p class="date">📅 14/10/2025</p>
+    </div>
+    <hr>
+    <div class="card-body">
+      <h3>Resumo da Sessão:</h3>
+      <p>Primeira sessão. Paciente descreveu situação de estresse laboral. Estabelecidos objetivos terapêuticos.</p>
+    </div>
+  </div>
 
 </section>
 
