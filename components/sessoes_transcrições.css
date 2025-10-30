@@ -1,0 +1,43 @@
+@import url(variaveis.css);
+
+.grid-sessoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas */
+    column-gap: 5px; /* reduzido para aproximar as colunas */
+    row-gap: 20px;
+    padding: 40px 0 ;
+    margin-left: 400px;
+}
+
+.card-transcrição {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 12px;
+    padding: 200px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    font-family: "Poppins", sans-serif;
+    gap: 16px;
+    width: 180%; /* ocupa toda a célula da grid */
+}
+
+.icone img {
+    width: 40px;
+    height: 40px;
+    background-color: #0056ff;
+    opacity: 0.12;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.conteudo-card h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.conteudo-card p {
+    margin-top: 6px;
+    font-size: 14px;
+}

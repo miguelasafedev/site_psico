@@ -1,0 +1,64 @@
+@import url(variaveis.css);
+
+.grid-financeiro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas */
+    column-gap: 5px; /* reduzido para aproximar as colunas */
+    row-gap: 20px;
+    padding: 40px 0;
+    margin-left: 400px;
+}
+
+.card-finança {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #DDECFF;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  gap: 16px;
+  width: 88%; /* ocupa toda a célula da grid */
+}
+
+.icone {
+  width: 40px;
+  height: 40px;
+  background-color: #0056ff;
+  opacity: 0.12;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.conteudo-card h1{
+    font-size: 14px;
+    font-style: bold;
+}
+
+.conteudo-card h3{
+    font-size: large;
+    color: black;
+}
+
+
+.card-extrato p {
+    margin-top: 6px;
+    font-size: 8px;
+}
+
+.extrato h1{
+    font-size: 14px;
+}
+
+.extrato p{
+    font-size: 10px;
+    font-style: italic;
+}
+
+
+.pagamento {
+    font-size: 14px;
+    color: #444;
+
+}
