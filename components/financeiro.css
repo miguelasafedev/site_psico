@@ -1,68 +1,105 @@
 @import url(variaveis.css);
 
 .grid-financeiro {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas */
-    column-gap: 5px; /* reduzido para aproximar as colunas */
-    row-gap: 20px;
-    padding: 40px 0;
+    display: flex;
+    gap: 20px;
     margin-left: 400px;
 }
 
-.card-finança {
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border: 1px solid #DDECFF;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  font-family: "Poppins", sans-serif;
-  gap: 16px;
-  width: 88%; /* ocupa toda a célula da grid */
-}
-
-.icone {
-  width: 40px;
-  height: 40px;
-  background-color: #0056ff;
-  opacity: 0.12;
-  border-radius: 8px;
-  margin-right: 15px;
-}
-
-.conteudo-card h1{
-    font-size: 14px;
-    font-style: bold;
-}
-
-.conteudo-card h3{
-    font-size: large;
-    color: black;
-}
-
-
-.card-extrato p {
-    margin-top: 6px;
-    font-size: 8px;
-}
-
-.extrato h1{
-    font-size: 14px;
-}
-
-.extrato p{
-    font-size: 10px;
-    font-style: italic;
-}
-
-
-.pagamento {
-    font-size: 14px;
-    color: #444;
-
-}
-
-.card-extrato {
+.card-financeiro {
+    background-color: #fff;
+    width: 400px;
+    height: 125px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px 30px;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
+}
+
+.box-lineup {
+    display: flex;
+    align-items: center;
+    gap: 230px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card-financeiro p {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.box-linedown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-extrato {
+    background-color: #fff;
+    width: 1360px;
+    height: 400px;
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    margin-left: 400px;
+
+
+}
+.box-extrato h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.pagamento-box {
+    background-color: #EAEAEA;
+    width: 1300px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+}
+
+.financeiro-paciente {
+    font-family: "Poppins", sans-serif;
+    padding-left: 10px;
+}
+
+.financeiro-paciente h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.financeiro-paciente p {
+    font-size: 15px;
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.status h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 1000px;
+}
+
+.status p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #186800;
 }
