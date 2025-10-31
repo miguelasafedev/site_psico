@@ -7,48 +7,46 @@
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 245px;
-    height: 100%;
-    background-color: #fff;
-    padding: 26px 26px;
-    border-right: 1px solid #EFF3F7;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 245px;
+  height: 100%;
+  background-color: #fff;
+  padding: 26px 26px;
+  border-right: 1px solid #EFF3F7;
 }
 
 .sidebar-header {
-    width: 100%;
-    margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.sidebar button {
-    background: transparent;
-    border: 0;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    text-align: left;
-    padding: 0;
+.sidebar nav a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+  padding: 0;
 }
 
-.sidebar button > span {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    height: 60px;
+.sidebar nav a > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  height: 60px;
+}
 
+.sidebar nav a:hover > span {
+  color: var(--azul-padrao);
 }
 
 strong {
-    color: var(--azul-padrao);
-}
-
-.sidebar button:hover > span {
-    color: var(--azul-padrao);
+  color: var(--azul-padrao);
 }
 
 .tittle {

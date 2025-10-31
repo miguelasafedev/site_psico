@@ -8,7 +8,6 @@
   margin: 0 auto;
 }
 
-/* ======= Cards ======= */
 .card-config {
   background: #fff;
   border: 1px solid #e5e8ec;
@@ -33,7 +32,6 @@
     margin-bottom: 18px;
 }
 
-/* ======= Inputs ======= */
 label {
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
@@ -60,7 +58,6 @@ input:focus {
   border-color: #3b82f6;
 }
 
-/* ======= Botões ======= */
 .btn-salvar {
   width: 100%;
   background-color: #3b82f6;
@@ -78,7 +75,6 @@ input:focus {
   background-color: #2563eb;
 }
 
-/* ======= Toggle Switch ======= */
 .toggle-group {
   display: flex;
   align-items: center;
@@ -91,7 +87,6 @@ input:focus {
   color: #333;
 }
 
-/* Estilo do switch */
 input[type="checkbox"] {
   position: relative;
   width: 42px;
