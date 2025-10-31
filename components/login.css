@@ -65,6 +65,8 @@
 }
 
 .btn-primary {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
     padding: 14px;
     background-color: var(--azul-padrao);
     color: #ffffff;
@@ -75,6 +77,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary:hover {
