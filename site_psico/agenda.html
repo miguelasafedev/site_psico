@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Psico - Agenda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&family=Inter:wght@400;600&family=Montserrat+Alternates:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./components/style.css">
+    <link rel="icon" type="image" href="./img/logo_psico.png">
+</head>
+
+<body class="bck-padrao">
+
+    <section id="agenda">
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <img src="./img/logo-sidebar.png" alt="">
+            </header>
+
+            <nav>
+                <a href="agenda.html">
+                    <span><img src="./img/agenda-nav.png" alt=""><strong>Agenda</strong></span>
+                </a>
+                <a href="pacientes.html">
+                    <span><img src="./img/pacientes-off.png" alt="">Meus Pacientes</span>
+                </a>
+                <a href="registros.html">
+                    <span><img src="./img/registros-off.png" alt="">Registros</span>
+                </a>
+                <a href="sessoes_transcrições.html">
+                    <span><img src="./img/sessoes-off.png" alt="">Sessões/Transcrição</span>
+                </a>
+                <a href="financeiro.html">
+                    <span><img src="./img/financeiro-off.png" alt="">Financeiro</span>
+                </a>
+                <a href="configurações.html">
+                    <span><img src="./img/config-off.png" alt="">Configurações</span>
+                </a>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+
+            <div class="header-top">
+                <div class="tittle">
+                    <h1>Agenda</h1>
+                    <p>Gerencie suas consultas e compromissos</p>
+                </div>
+                <a href="#" class="evento-btn" id="btn-criar-evento">+ Criar Novo Evento</a>
+            </div>
+
+            <div class="conteudo-agenda">
+
+                <div class="agenda-box" id="agenda-box">
+                    <div class="data-info">
+                        <img src="./img/agenda-nav.png" alt="">
+                        <h1 id="data-atual">Hoje - 15 de Outubro, 2025</h1>
+                    </div>
+
+                    <div class="events-list">
+                    </div>
+
+                </div>
+
+                <div class="resumo-box" id="resumo-box">
+                    <h3>Resumo Semanal</h3>
+                    <div class="resumo-dados">
+                        <div>
+                            <span>Consultas essa semana</span>
+                            <strong id="consultas-semanais">0</strong>
+                        </div>
+                        <div>
+                            <span>Horas de trabalho</span>
+                            <strong id="horas-trabalho">0h</strong>
+                        </div>
+                        <div>
+                            <span>Taxa de ocupação</span>
+                            <strong id="taxa-ocupacao">0%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-agendamento" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Agendar Nova Consulta</h2>
+                <span class="close-btn" onclick="fecharModalAgendamento()">&times;</span>
+            </div>
+
+            <form id="form-agendamento">
+
+                <div class="form-group">
+                    <label for="paciente-select">Paciente:</label>
+                    <select id="paciente-select" name="paciente" required>
+                        <option value="">Selecione um Paciente</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-consulta">Tipo de Consulta:</label>
+                    <select id="tipo-consulta" name="tipo" required>
+                        <option value="Terapia Individual">Terapia Individual</option>
+                        <option value="Avaliação Inicial">Avaliação Inicial</option>
+                        <option value="Terapia de Casal">Terapia de Casal</option>
+                        <option value="Sessão Online">Sessão Online</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data-consulta">Data:</label>
+                    <input type="date" id="data-consulta" name="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="horario-consulta">Horário:</label>
+                    <input type="time" id="horario-consulta" name="horario" required>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" onclick="fecharModalAgendamento()" class="btn-secondary">Cancelar</button>
+                    <button type="submit" class="btn-primary">Agendar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal-confirm-exclusao" class="modal-overlay">
+        <div class="modal-content modal-confirm">
+            <div class="modal-header">
+                <h2>Confirmar Exclusão</h2>
+                <span class="close-btn" onclick="fecharModalExclusao()">&times;</span>
+            </div>
+
+            <div class="modal-body">
+                <p>Tem certeza que deseja excluir permanentemente <span id="paciente-sessao-excluir"></span>?</p>
+                <p class="warning-text">Esta ação não pode ser desfeita.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="btn-cancelar-exclusao" class="btn-secondary">Cancelar</button>
+                <button type="button" id="btn-confirmar-exclusao" class="btn-danger">Excluir</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="./js/agenda.js"></script>
+</body>
+
+</html>

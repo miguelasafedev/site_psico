@@ -1,0 +1,48 @@
+@import url(variaveis.css);
+
+
+.nav-header {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 295px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo h1 {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    margin-right: 740px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    margin-right: 36px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.6;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+
+hr {
+    opacity: 0.6;
+}

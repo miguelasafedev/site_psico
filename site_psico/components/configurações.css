@@ -1,0 +1,136 @@
+@import url(variaveis.css);
+
+.configuracoes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin-left: 300px;
+}
+
+.card-config {
+  background: #fff;
+  border: 1px solid #e5e8ec;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.card-config h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-config p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+.btn-salvar {
+  width: 100%;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.btn-salvar:hover {
+  background-color: #2563eb;
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.toggle-group label {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 42px;
+  height: 22px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ccc;
+  outline: none;
+  border-radius: 22px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background: #3b82f6;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
+
+.card-config:nth-child(1) h3::before {
+  content: "👤";
+}
+.card-config:nth-child(2) h3::before {
+  content: "🔔";
+}
+.card-config:nth-child(3) h3::before {
+  content: "🔒";
+}
+.card-config:nth-child(4) h3::before {
+  content: "⚙️";
+}
+

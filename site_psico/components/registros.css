@@ -1,0 +1,101 @@
+@import url(variaveis.css);
+
+.card-registros {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 1077px;
+  height: 105px;
+  padding: 20px;
+  border: 1px solid #e8ebf0;
+  margin-left: 300px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.icon img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.info p {
+  padding-bottom: 5px;
+}
+
+.topics {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #757575;
+}
+
+.topics span {
+  color: #2f68d0;
+  font-weight: 500;
+}
+
+.date {
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e6e6e6;
+  margin: 8px 0;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.card-body p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #757575;
+  line-height: 1.5;
+}
+
+.tittle-correcao {
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+.tittle-correcao h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.tittle-correcao p {
+    opacity: 0.8;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #555;
+    margin-bottom: 30px;
+}

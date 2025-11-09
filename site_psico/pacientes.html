@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Psico - Meus Pacientes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./components/style.css">
+    <link rel="icon" type="image" href="./img/logo_psico.png">
+</head>
+<body class="bck-padrao">
+    
+<section>
+
+<aside class="sidebar">
+    <header class="sidebar-header">
+        <img src="./img/logo-sidebar.png" alt="">
+    </header>
+
+    <nav>
+        <a href="agenda.html">
+            <span>
+                <img src="./img/agenda-off.png" alt="">
+                <span>Agenda</span>
+            </span>
+        </a>
+
+        <a href="pacientes.html">
+            <span>
+                <img src="./img/pacientes-on.png" alt="">
+                <span><strong>Meus Pacientes</strong></span>
+            </span>
+        </a>
+
+        <a href="registros.html">
+            <span>
+                <img src="./img/registros-off.png" alt="">
+                <span>Registros</span>
+            </span>
+        </a>
+
+        <a href="sessoes_transcrições.html">
+            <span>
+                <img src="./img/sessoes-off.png" alt="">
+                <span>Sessões/Transcrição</span>
+            </span>
+        </a>
+
+        <a href="financeiro.html">
+            <span>
+                <img src="./img/financeiro-off.png" alt="">
+                <span>Financeiro</span>
+            </span>
+        </a>
+
+        <a href="configurações.html">
+            <span>
+                <img src="./img/config-off.png" alt="">
+                <span>Configurações</span>
+            </span>
+        </a>
+    </nav>
+</aside>
+
+<div class="main-content">
+    
+    <div class="header-top">
+        <div class="tittle">
+            <h1>Meus Pacientes</h1>
+            <p>Gerencie informações dos seus pacientes</p>
+        </div>
+        
+        <a href="#" class="evento-btn">
+            + Criar Novo Paciente
+        </a>
+    </div>
+    
+    <div class="search-bar">
+        <img src="./img/pesquisa-icon.png" alt="">
+        <input type="text" id="barra-pesquisa" placeholder="Digite para pesquisar...">
+    </div>
+    
+    <article class="grid-pacientes">
+
+        <div class="paciente-card">
+            <div class="avatar">
+                <img src="./img/perfil_paciente.png" alt="Avatar de João Silva">
+            </div>
+            <div class="dados">
+                <h3>João Silva</h3>
+                <p>32 anos</p>
+                <p><span class="icon">📞</span> (71) 90000-0000</p>
+                <p><span class="icon">📧</span> joaosilva@gmail.com</p>
+                <p><span class="icon">📅</span> Última Sessão: 10/10/2025</p>
+            </div>
+        </div>
+
+        <div class="paciente-card">
+            <div class="avatar">
+                <img src="./img/perfil_paciente.png" alt="Avatar de João Silva">
+            </div>
+            <div class="dados">
+                <h3>João Silva</h3>
+                <p>32 anos</p>
+                <p><span class="icon">📞</span> (71) 90000-0000</p>
+                <p><span class="icon">📧</span> joaosilva@gmail.com</p>
+                <p><span class="icon">📅</span> Última Sessão: 10/10/2025</p>
+            </div>
+        </div>
+
+        <div class="paciente-card">
+            <div class="avatar">
+                <img src="./img/perfil_paciente.png" alt="Avatar de João Silva">
+            </div>
+            <div class="dados">
+                <h3>João Silva</h3>
+                <p>32 anos</p>
+                <p><span class="icon">📞</span> (71) 90000-0000</p>
+                <p><span class="icon">📧</span> joaosilva@gmail.com</p>
+                <p><span class="icon">📅</span> Última Sessão: 10/10/2025</p>
+            </div>
+        </div>
+
+        <div class="paciente-card">
+            <div class="avatar">
+                <img src="./img/perfil_paciente.png" alt="Avatar de João Silva">
+            </div>
+            <div class="dados">
+                <h3>João Silva</h3>
+                <p>32 anos</p>
+                <p><span class="icon">📞</span> (71) 90000-0000</p>
+                <p><span class="icon">📧</span> joaosilva@gmail.com</p>
+                <p><span class="icon">📅</span> Última Sessão: 10/10/2025</p>
+            </div>
+        </div>
+    </article>
+
+</div>
+</section>
+
+<div id="modal-cadastro-paciente" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Cadastrar Novo Paciente</h2>
+            <span class="close-btn" onclick="fecharModalCadastro()">&times;</span>
+        </div>
+        
+        <form id="form-cadastro-paciente">
+            <div class="form-group">
+                <label for="nome-paciente">Nome:</label>
+                <input type="text" id="nome-paciente" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="idade-paciente">Idade:</label>
+                <input type="number" id="idade-paciente" name="idade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genero-paciente">Gênero:</label>
+                <select id="genero-paciente" name="genero" required>
+                    <option value="">Selecione...</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Outro">Outro</option>
+                    <option value="NaoInformado">Não Informado</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone-paciente">Telefone:</label>
+                <input type="tel" id="telefone-paciente" name="telefone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email-paciente">E-mail:</label>
+                <input type="email" id="email-paciente" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="observacao-paciente">Observação:</label>
+                <textarea id="observacao-paciente" name="observacao" rows="3"></textarea>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" id="btn-cancelar-cadastro" class="btn-secondary">Cancelar</button>
+                <button type="submit" class="btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="modal-confirm-exclusao" class="modal-overlay">
+    <div class="modal-content modal-confirm">
+        <div class="modal-header">
+            <h2>Confirmar Exclusão</h2>
+            <span class="close-btn" onclick="fecharModalExclusao()">&times;</span>
+        </div>
+        
+        <div class="modal-body">
+            <p>Tem certeza que deseja excluir <span id="nome-paciente-excluir"></span>?</p>
+            <p class="warning-text">Esta ação não pode ser desfeita.</p>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" id="btn-cancelar-exclusao" class="btn-secondary">Cancelar</button>
+            <button type="button" id="btn-confirmar-exclusao" class="btn-danger">Excluir</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="toast-container"></div> 
+
+<script src="./js/paciente.js"></script>
+
+</body>
+</html>

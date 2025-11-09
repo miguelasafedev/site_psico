@@ -1,0 +1,137 @@
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./components/style.css">
+    <link rel="icon" type="image" href="./img/logo_psico.png">
+
+</head>
+
+<body class="bck-padrao">
+
+<aside class="sidebar">
+  <header class="sidebar-header">
+    <img src="./img/logo-sidebar.png" alt="">
+  </header>
+
+  <nav>
+    <a href="agenda.html">
+      <span>
+        <img src="./img/agenda-off.png" alt="">
+        <span>Agenda</span>
+      </span>
+    </a>
+
+    <a href="pacientes.html">
+      <span>
+        <img src="./img/pacientes-off.png" alt="">
+        <span>Meus Pacientes</span>
+      </span>
+    </a>
+
+    <a href="registros.html">
+      <span>
+        <img src="./img/registros-off.png" alt="">
+        <span>Registros</span>
+      </span>
+    </a>
+
+    <a href="sessoes_transcrições.html">
+      <span>
+        <img src="./img/sessoes-off.png" alt="">
+        <span>Sessões/Transcrição</span>
+      </span>
+    </a>
+
+    <a href="financeiro.html">
+      <span>
+        <img src="./img/financeiro-off.png" alt="">
+        <span>Financeiro</span>
+      </span>
+    </a>
+
+    <a href="configurações.html">
+      <span>
+        <img src="./img/config-on.png" alt="">
+        <span><strong>Configurações</strong></span>
+      </span>
+    </a>
+  </nav>
+</aside>
+
+<div class="tittle-correcao">
+      <h1>Configurações</h1>
+      <p>Gerencie suas preferências e conta</p>
+    </div>
+
+<div class="configuracoes-grid">
+  <div class="card-config">
+    <h3>Perfil</h3>
+    <p>Atualize suas informações pessoais</p>
+    <label>Nome Completo</label>
+    <input type="text" value="Dr Psicologo">
+    <label>E-mail</label>
+    <input type="email" value="drpsicologo@email.com">
+    <label>CRP</label>
+    <input type="text" value="00000000">
+    <button class="btn-salvar">Salvar alterações</button>
+  </div>
+
+  <div class="card-config">
+    <h3>Notificações</h3>
+    <p>Configure suas preferências de notificação</p>
+    <div class="toggle-group">
+      <label>Lembretes de Consulta</label>
+      <input type="checkbox" checked>
+    </div>
+    <div class="toggle-group">
+      <label>Notificações de movimentações</label>
+      <input type="checkbox" checked>
+    </div>
+    <div class="toggle-group">
+      <label>Pagamentos Pendentes</label>
+      <input type="checkbox">
+    </div>
+  </div>
+
+  <div class="card-config">
+    <h3>Segurança</h3>
+    <p>Altere sua senha de acesso da conta</p>
+    <label>Senha Atual</label>
+    <input type="password">
+    <label>Nova Senha</label>
+    <input type="password">
+    <label>Confirmar Nova Senha</label>
+    <input type="password">
+    <button class="btn-salvar">Alterar Senha</button>
+  </div>
+
+  <div class="card-config">
+    <h3>Preferências do sistema</h3>
+    <p>Personalize a aparência e o comportamento</p>
+    <div class="toggle-group">
+      <label>Modo Escuro</label>
+      <input type="checkbox" checked>
+    </div>
+    <div class="toggle-group">
+      <label>Animações</label>
+      <input type="checkbox" checked>
+    </div>
+    <div class="toggle-group">
+      <label>Sons do Sistema</label>
+      <input type="checkbox">
+    </div>
+  </div>
+</div>
+
+    </section>
+    </article>
+  </main>
+
+</body>
+</html>

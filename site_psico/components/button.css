@@ -1,0 +1,49 @@
+@import url(variaveis.css);
+
+
+.button {
+    text-decoration: none;
+    background-color: var(--azul-padrao);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 10px;
+}
+
+.button-home {
+    text-decoration: none;
+    background-color: var(--azul-padrao);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 13px 32px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.button-saiba {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--azul-padrao);
+    border: 2px solid var(--azul-padrao);
+    padding: 13px 39px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 92px;
+}
+
+.button-comece {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 15px 26px;
+    color: var(--azul-padrao);
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+}
