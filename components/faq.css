@@ -52,6 +52,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -97,6 +98,8 @@
     height: 260px;
     border-radius: 25px;
     margin-top: 122px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+
 }
 
 .faq-box  h1{
@@ -124,7 +127,10 @@
     margin-top: 216px;
 }
 
+#faq {
+    scroll-margin-top: 100px; 
 
+}
 
 
 
